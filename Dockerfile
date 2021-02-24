@@ -1,7 +1,7 @@
 FROM ubuntu
 
-RUN apt update; \
-    apt install nginx -y 
+RUN apt-get update; \
+    apt-get install nginx -y 
 
 RUN mkdir -p /var/www/2048
 COPY ./2048/ /var/www/2048/
